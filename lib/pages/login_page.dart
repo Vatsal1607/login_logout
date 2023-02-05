@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/pages/BgImage.dart';
+import 'package:learn_flutter/widgets/BgImage.dart';
 import 'package:learn_flutter/pages/home_page.dart';
 import 'package:learn_flutter/utils/constants.dart';
 
@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                             child: Column(
                               children: [
                                 TextFormField(
-                                  decoration: InputDecoration(
+                                  decoration: const InputDecoration(
                                       hintText: "Enter Username",
                                       labelText: "Username"
                                   ),
@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
 
                                 TextFormField(
                                   obscureText: true,
-                                  decoration: InputDecoration(
+                                  decoration: const InputDecoration(
                                       hintText: "Enter Password",
                                       labelText: "Password"
                                   ),
@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                           )
                       ),
 
-                      SizedBox(height: 20,),
+                      const SizedBox(height: 20,),
 
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                               Constants.prefs.setBool("loggedIn", true);
                               Navigator.pushReplacementNamed(context, "/home");
                             },
-                            child: Text('Sign In')),
+                            child: const Text('Sign In')),
                       )
                     ],
                   ),

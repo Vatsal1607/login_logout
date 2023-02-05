@@ -19,11 +19,11 @@ class ChangeNameCard extends StatelessWidget {
         ),
         Text(
           myText,
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 25, fontWeight: FontWeight.bold
           ),),
 
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
 
@@ -31,7 +31,7 @@ class ChangeNameCard extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: TextField(
             controller: _nameController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               border: OutlineInputBorder(),
               hintText: "Enter the correct name",
               labelText: "Name",
